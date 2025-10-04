@@ -10,7 +10,7 @@
     <meta name="author" content="Starting A Car Dealership™" />
     <meta name="keywords" content="car dealership course, dealer license Canada, dealer license USA, car auction secrets, dealership training, auto dealer mentorship" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Starting A Car Dealership™ – Your Blueprint to Dealership Success" />
     <meta property="og:description" content="The only program that teaches you how to launch a profitable car dealership. Learn licensing, auctions, sourcing, and more." />
@@ -30,93 +30,109 @@
     <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/OGscLQJ2acUzYJQCTAFXXJf7egL2/uploads/1759556316473-4d1d4811eb5329f5654be6c33b52bb4d489e788bf78538d0a57754a16b165b0c.jpg" />
   </head>
 
-  <body>
+  <body style="font-family: 'Poppins', sans-serif;">
     <div id="root"></div>
+
+    <!-- 🔘 Clickbait CTA -->
+    <div style="text-align: center; margin: 60px 0;">
+      <button id="learnMoreBtn" style="padding: 14px 26px; background-color: #2b61f6; color: #fff; border: none; border-radius: 6px; font-weight: 600; font-size: 16px; cursor: pointer;">
+        🚨 Want the Blueprint? Tap Here
+      </button>
+    </div>
+
+    <!-- 💬 Conversational Form -->
+    <div id="dealer-app-form" style="max-width: 500px; margin: 60px auto; padding: 20px;"></div>
+
     <script type="module" src="/src/main.tsx"></script>
+
     <script>
-  const dealerForm = [
-    {
-      question: "Hey there 👋 What's your full name?",
-      type: "text",
-      name: "name"
-    },
-    {
-      question: "Nice to meet you! What's your phone number?",
-      type: "tel",
-      name: "phone"
-    },
-    {
-      question: "And your best email?",
-      type: "email",
-      name: "email"
-    }
-  ];
-
-  const formContainer = document.getElementById("dealer-app-form");
-  let currentStep = 0;
-  const formData = {};
-
-  function showNextQuestion() {
-    formContainer.innerHTML = "";
-
-    if (currentStep < dealerForm.length) {
-      const field = dealerForm[currentStep];
-      const wrapper = document.createElement("div");
-
-      const question = document.createElement("p");
-      question.textContent = field.question;
-      wrapper.appendChild(question);
-
-      const input = document.createElement("input");
-      input.type = field.type;
-      input.name = field.name;
-      input.required = true;
-      input.style.padding = "10px";
-      input.style.marginTop = "10px";
-      input.style.width = "100%";
-      wrapper.appendChild(input);
-
-      const btn = document.createElement("button");
-      btn.textContent = "Next →";
-      btn.style.marginTop = "15px";
-      btn.style.padding = "10px 20px";
-      btn.style.background = "#2b61f6";
-      btn.style.color = "#fff";
-      btn.style.border = "none";
-      btn.style.borderRadius = "6px";
-      btn.onclick = function () {
-        if (input.value.trim()) {
-          formData[field.name] = input.value.trim();
-          currentStep++;
-          showNextQuestion();
-        } else {
-          input.style.border = "2px solid red";
-        }
-      };
-
-      wrapper.appendChild(btn);
-      formContainer.appendChild(wrapper);
-    } else {
-      // Final thank you screen
-      formContainer.innerHTML = `<h3>Thanks! We'll be in touch soon. ✅</h3>`;
-
-      // TODO: Send to GHL webhook here
-      console.log("Collected Data:", formData);
-
-      // You’ll replace this with a real POST to GHL later
-      /*
-      fetch("https://your-ghl-form-or-webhook", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
+      const dealerForm = [
+        {
+          question: "Hey there 👋 What's your full name?",
+          type: "text",
+          name: "name"
         },
-        body: JSON.stringify(formData)
-      });
-      */
-    }
-  }
+        {
+          question: "Nice to meet you! What's your phone number?",
+          type: "tel",
+          name: "phone"
+        },
+        {
+          question: "And your best email?",
+          type: "email",
+          name: "email"
+        }
+      ];
 
-  showNextQuestion();
-</script>
+      const formContainer = document.getElementById("dealer-app-form");
+      let currentStep = 0;
+      const formData = {};
+
+      function showNextQuestion() {
+        formContainer.innerHTML = "";
+
+        if (currentStep < dealerForm.length) {
+          const field = dealerForm[currentStep];
+          const wrapper = document.createElement("div");
+
+          const question = document.createElement("p");
+          question.textContent = field.question;
+          question.style.fontSize = "18px";
+          wrapper.appendChild(question);
+
+          const input = document.createElement("input");
+          input.type = field.type;
+          input.name = field.name;
+          input.required = true;
+          input.style.padding = "12px";
+          input.style.marginTop = "10px";
+          input.style.width = "100%";
+          input.style.border = "1px solid #ccc";
+          input.style.borderRadius = "5px";
+          wrapper.appendChild(input);
+
+          const btn = document.createElement("button");
+          btn.textContent = "Next →";
+          btn.style.marginTop = "15px";
+          btn.style.padding = "10px 20px";
+          btn.style.background = "#2b61f6";
+          btn.style.color = "#fff";
+          btn.style.border = "none";
+          btn.style.borderRadius = "6px";
+          btn.style.cursor = "pointer";
+          btn.onclick = function () {
+            if (input.value.trim()) {
+              formData[field.name] = input.value.trim();
+              currentStep++;
+              showNextQuestion();
+            } else {
+              input.style.border = "2px solid red";
+            }
+          };
+
+          wrapper.appendChild(btn);
+          formContainer.appendChild(wrapper);
+        } else {
+          formContainer.innerHTML = `<h3 style="text-align:center;">Thanks! We'll be in touch soon. ✅</h3>`;
+          console.log("Collected Data:", formData);
+
+          // Later: send to GHL
+          /*
+          fetch("https://your-ghl-form-or-webhook", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify(formData)
+          });
+          */
+        }
+      }
+
+      document.getElementById("learnMoreBtn").addEventListener("click", function () {
+        showNextQuestion();
+        window.scrollTo({ top: document.getElementById("dealer-app-form").offsetTop - 50, behavior: 'smooth' });
+      });
+    </script>
   </body>
 </html>
