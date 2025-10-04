@@ -4,20 +4,20 @@ const steps = [
   {
     icon: Calendar,
     step: "Step 1",
-    title: "Book a Discovery Call",
-    description: "We'll discuss your goals, location, and timeline. No commitment required—just an honest conversation about what's possible.",
+    title: "Book Your Call",
+    description: "Schedule a consultation to discuss your goals and learn how our program can help you enter the car dealership industry.",
   },
   {
     icon: Map,
     step: "Step 2",
-    title: "Custom Launch Map",
-    description: "Get your personalized roadmap covering CRM setup, dealer licensing, supplier onboarding, and your first 90 days of sales strategy.",
+    title: "Get Your Blueprint",
+    description: "Access our comprehensive course covering licensing, inventory sourcing, auctions, and industry secrets from successful dealers.",
   },
   {
     icon: TrendingUp,
     step: "Step 3",
-    title: "Start Selling",
-    description: "We help you launch, market, and close deals. Everything we build is 100% yours to keep and scale as you grow.",
+    title: "Launch & Grow",
+    description: "Receive ongoing mentorship, join our dealer network, and build your profitable dealership with lifetime support.",
   },
 ];
 
@@ -27,10 +27,10 @@ export function HowItWorksSection() {
       <div className="container px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="mb-4">
-            The <span className="gradient-text">Fast-Track</span> Blueprint
+            Your Path to <span className="gradient-text">Dealership Success</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            From zero to launch in 90 days or less
+            A proven system designed for aspiring dealers
           </p>
         </div>
         
@@ -71,7 +71,7 @@ export function HowItWorksSection() {
         
         <div className="mt-16 text-center">
           <p className="text-lg text-muted-foreground italic">
-            "Everything we build is 100% yours to keep."
+            "Join dealers worldwide who have mastered the industry"
           </p>
         </div>
       </div>

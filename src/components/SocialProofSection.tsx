@@ -3,30 +3,30 @@ import { Quote, Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Marcus T.",
-    role: "Former Tech Sales Rep",
-    content: "I went from knowing nothing about cars to closing my first deal in 3 weeks. The CRM and coaching made all the difference.",
+    name: "Michael R.",
+    role: "Licensed Dealer, Ontario",
+    content: "This course gave me the exact roadmap I needed. The auction secrets alone paid for the entire program ten times over.",
     rating: 5,
   },
   {
-    name: "Sarah M.",
-    role: "Small Business Owner",
-    content: "The licensing process scared me at first, but their team walked me through every step. Now I have a legal, profitable dealership.",
+    name: "Jennifer L.",
+    role: "New Dealer, USA",
+    content: "The licensing guidance was invaluable. I avoided costly mistakes and got approved faster than I ever thought possible.",
     rating: 5,
   },
   {
-    name: "James K.",
-    role: "Former Restaurant Manager",
-    content: "Best decision I ever made. I'm making more money working fewer hours, and I actually own my business. No more working for someone else.",
+    name: "David K.",
+    role: "Independent Dealer",
+    content: "The networking and mentorship are worth their weight in gold. Having experienced dealers to call on has been game-changing.",
     rating: 5,
   },
 ];
 
 const stats = [
-  { value: "$10M+", label: "Inventory Placed" },
-  { value: "98%", label: "Licensing Success" },
-  { value: "500+", label: "Units Sold" },
-  { value: "100+", label: "Dealers Launched" },
+  { value: "1000+", label: "Students Enrolled" },
+  { value: "95%", label: "Success Rate" },
+  { value: "24/7", label: "Community Support" },
+  { value: "Lifetime", label: "Mentorship Access" },
 ];
 
 export function SocialProofSection() {

@@ -11,16 +11,16 @@ export function CTASection() {
       <div className="container px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center animate-fade-in-up">
           <h2 className="mb-6">
-            Ready to Start Your <span className="gradient-text">Dealership?</span>
+            Ready to Become a <span className="gradient-text">Licensed Dealer?</span>
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-            No pressure. No fluff. Just real results.
+            Take the first step toward dealership ownership.
           </p>
           
           <p className="text-muted-foreground mb-12 max-w-xl mx-auto">
-            Book a free strategy call and we'll show you exactly how we can help you launch 
-            a profitable dealership—even if you've never sold a car before.
+            Book a call to learn how our proven course and mentorship program can help you 
+            enter the car business with confidence—even with zero experience.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -29,15 +29,14 @@ export function CTASection() {
               size="xl"
               className="group"
             >
-              <Phone className="mr-2 h-5 w-5" />
-              Request a Free Strategy Call
+              MAKE ME A DEALER
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
           
           <div className="inline-flex items-center gap-2 text-sm text-muted-foreground bg-card/50 border border-border rounded-full px-6 py-3">
             <div className="h-2 w-2 rounded-full bg-primary animate-glow-pulse" />
-            <span>100+ dealers launched • Proven system • Zero fluff</span>
+            <span>Lifetime Support • Expert Mentorship • Proven Methods</span>
           </div>
         </div>
       </div>

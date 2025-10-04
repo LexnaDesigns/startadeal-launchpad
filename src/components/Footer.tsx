@@ -5,11 +5,11 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="text-2xl font-bold gradient-text mb-4">
-              StartADealership.com
+              Starting A Car Dealership™
             </div>
             <p className="text-muted-foreground">
-              The plug-and-play model for launching your own car dealership. 
-              No experience needed.
+              Your complete blueprint to owning a profitable car dealership. 
+              Expert training and lifetime support.
             </p>
           </div>
           
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
         
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} StartADealership.com. All rights reserved.</p>
+          <p>Copyrights by Starting A Car Dealership™ {new Date().getFullYear()} | Terms & Conditions</p>
         </div>
       </div>
     </footer>

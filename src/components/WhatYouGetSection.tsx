@@ -1,14 +1,14 @@
 import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "Custom CRM System (fully configured for your dealership)",
-  "Startup Coaching & Weekly Check-ins",
-  "Dealer Licensing Help (we handle the paperwork headaches)",
-  "Direct Supplier Access (inventory from day one)",
-  "Marketing Templates & Sales Scripts",
-  "Ongoing Support (we're with you for the long haul)",
-  "Legal & Compliance Guidance",
-  "Financing Partner Connections",
+  "Complete Dealer Licensing Guide (Canada & USA)",
+  "Car Auction Mastery (Ontario and beyond)",
+  "Industry Opportunity Analysis for 2025",
+  "1-on-1 Expert Mentorship",
+  "Worldwide Dealer Community Access",
+  "Profitable Inventory Sourcing Secrets",
+  "Lifetime Course Updates & Support",
+  "Insider Tips from Successful Dealers",
 ];
 
 export function WhatYouGetSection() {
@@ -40,10 +40,10 @@ export function WhatYouGetSection() {
           
           <div className="mt-12 p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-card to-accent/10 border-2 border-primary/30 text-center card-glow">
             <p className="text-xl md:text-2xl font-semibold text-foreground mb-2">
-              Everything is Built for You
+              Your Complete Dealer Education
             </p>
             <p className="text-muted-foreground">
-              We don't just teach you—we build it with you. And it's 100% yours to keep.
+              Everything you need to know, backed by real dealer experience and ongoing support.
             </p>
           </div>
         </div>

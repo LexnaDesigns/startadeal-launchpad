@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    question: "Do I need a physical lot?",
-    answer: "No. Many of our dealers start with online-only sales or operate from home. You can scale to a physical location when you're ready.",
+    question: "What makes this course different?",
+    answer: "We provide real-world dealer knowledge, not just theory. You get lifetime mentorship from successful dealers, access to our global community, and insider secrets about auctions and inventory.",
   },
   {
-    question: "Can I do this part-time?",
-    answer: "Absolutely. While full-time commitment accelerates results, many dealers start part-time and transition once they're profitable.",
+    question: "Do I need experience in the car industry?",
+    answer: "No experience is required. Our course is designed for complete beginners and covers everything from licensing to your first sale.",
   },
   {
-    question: "Is it legal in my province/state?",
-    answer: "Yes. We help you navigate licensing requirements specific to your location. Our success rate for licensing approval is 98%.",
+    question: "Does this work in my location?",
+    answer: "Yes. We cover licensing for both Canada and USA, and our auction strategies apply across North America. We'll help you understand your specific market.",
   },
   {
-    question: "Do you help with financing?",
-    answer: "Yes. We connect you with financing partners and help you set up relationships with lenders for your customers.",
+    question: "What kind of support do I get?",
+    answer: "You receive 1-on-1 mentorship from experienced dealers, lifetime access to our course updates, and membership in our worldwide dealer community for ongoing help.",
   },
   {
-    question: "What if I've never sold a car?",
-    answer: "That's exactly who we built this for. Our system includes sales scripts, pricing strategies, and negotiation training. No experience required.",
+    question: "How long does it take to become a dealer?",
+    answer: "Timeline varies by location, but our course shows you exactly how long it takes in your area and how to avoid delays that slow down most applicants.",
   },
   {
-    question: "How much does it cost to get started?",
-    answer: "Investment varies based on your location and business model. Book a discovery call and we'll create a custom plan with transparent pricing—no hidden fees.",
+    question: "What's included in the course?",
+    answer: "Complete licensing guidance, every car auction explained, 2025 industry opportunities, inventory sourcing secrets, networking, and personalized mentorship. Book a call to learn more.",
   },
 ];
 

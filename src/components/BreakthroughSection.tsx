@@ -1,21 +1,31 @@
-import { Brain, Wrench, Car } from "lucide-react";
+import { FileCheck, TrendingUp, Users, Car, UserCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
   {
-    icon: Brain,
-    title: "No Experience Needed",
-    description: "We've built dealerships for accountants, teachers, and tech workers. Your background doesn't matter—your drive does.",
+    icon: FileCheck,
+    title: "Getting a Dealer License",
+    description: "Learn how much money you need, how long it will take, and the most common mistakes applicants make in Canada & USA.",
   },
   {
-    icon: Wrench,
-    title: "Tools + Coaching Included",
-    description: "Get your own CRM, licensing support, and weekly coaching. Everything you need is provided—no hidden fees or upsells.",
+    icon: TrendingUp,
+    title: "Opportunities",
+    description: "Understand where the most money is made in the car industry in 2025 and how to capitalize on emerging trends.",
+  },
+  {
+    icon: Users,
+    title: "Networking",
+    description: "Meet other dealers and join our community of Car Dealers worldwide. Get help with anything you need.",
   },
   {
     icon: Car,
-    title: "Real Inventory from Day One",
-    description: "Access our trusted supplier network immediately. Start listing and selling cars before you even have a physical lot.",
+    title: "Inventory",
+    description: "Every single car auction in Ontario and beyond, including their benefits and profitable secrets explained.",
+  },
+  {
+    icon: UserCheck,
+    title: "1-on-1 Mentorship",
+    description: "Get personalized support from experts who have already succeeded in the industry. Ongoing lifetime support.",
   },
 ];
 
@@ -25,14 +35,14 @@ export function BreakthroughSection() {
       <div className="container px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="mb-4">
-            A New Era for <span className="gradient-text">Auto Entrepreneurs</span>
+            Why This <span className="gradient-text">Course?</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            The old way was broken. We built something better.
+            Everything you need to succeed in the car dealership business.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <Card
               key={index}

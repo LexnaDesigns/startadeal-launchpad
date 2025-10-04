@@ -31,8 +31,8 @@ export function StickyHeader() {
       <div className="bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="text-2xl font-bold gradient-text">
-              StartADealership.com
+            <div className="text-xl md:text-2xl font-bold gradient-text">
+              Starting A Car Dealership™
             </div>
           </div>
           

@@ -21,17 +21,16 @@ export function HeroSection() {
       <div className="container relative z-10 px-4 py-20 md:py-32">
         <div className="mx-auto max-w-5xl text-center animate-fade-in-up">
           <h1 className="mb-6 leading-tight">
-            Dealerships, Rebuilt from the{" "}
-            <span className="gradient-text">Ground Up</span>
+            Discover the Blueprint to Owning a{" "}
+            <span className="gradient-text">Profitable Car Dealership</span>
           </h1>
           
           <p className="mx-auto mb-4 max-w-3xl text-xl md:text-2xl text-muted-foreground font-light">
-            StartADealership.com is the plug-and-play model that removes the guesswork, 
-            gatekeeping, and greasy sales vibes.
+            Ready to Enter the Car Business? This Course Has Everything You Need to Succeed!
           </p>
           
           <p className="mb-10 text-sm text-muted-foreground/80 font-medium tracking-wide">
-            100+ dealers launched. You're next.
+            Join dealers worldwide who have mastered the industry.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -41,7 +40,7 @@ export function HeroSection() {
               onClick={scrollToContact}
               className="group"
             >
-              Build My Dealership
+              MAKE ME A DEALER
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             
@@ -50,7 +49,7 @@ export function HeroSection() {
               size="xl"
               onClick={scrollToContact}
             >
-              See How It Works
+              Learn More
             </Button>
           </div>
         </div>
